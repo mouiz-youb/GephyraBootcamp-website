@@ -1,1 +1,18 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+:root {
+  --gold-primary: #D4AF37;
+  --gold-light: #F4E8C1;
+  --silver: #C0C0C0;
+  --dark-bg: #0a0a0a;
+  --darker-bg: #050505;
+}
+@theme {
+  --font-cinzel: "Cinzel", serif;
+  /* color  */
+  --color-gold: var(--gold-primary);
+  --color-gold-light: var(--gold-light);
+  --color-silver: var(--silver);
+  --color-dark-bg: var(--dark-bg);
+  --color-darker-bg: var(--darker-bg);
+}
