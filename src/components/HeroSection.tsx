@@ -44,11 +44,11 @@ function HeroSection() {
           <Button label="applly now " className="btn-gold  pulse-gold md:px-8 md:py-4 "/>
           <Button label="learn more  " className=" border-yellow-500/50 md:px-8 md:py-4 text-yellow-500 hover:bg-yellow-500/10 transition-all"/>
         </div>
-        <div className=" w-1/2  grid grid-cols-3  gap-10 my-8  relative">
+        <div className=" w-full md:w-1/2  px-3 md:px-0 grid grid-cols-3  gap-10 my-8  relative">
           {house.map((item,index)=>(
-            <div key={index} className={`flex justify-center items-center flex-col gap-2 mt-10 border-white p-3   ${index === 0 ?``:`border-l`}  `}>
-              <p className=" text-gray-800 font-cinzel text-3xl font-bold gold-text">{item.number}</p>
-              <p className="text-gray-400 text-sm capitalize">{item.name}</p>
+            <div key={index} className={`flex justify-center px-2 items-center text-center  flex-col gap-2 mt-10 border-white p-3   ${index === 0 ?``:`border-l`}  `}>
+              <p className=" text-gray-800 font-cinzel  text-3xl font-bold gold-text">{item.number}</p>
+              <p className="text-gray-400  text-xs md:text-sm capitalize">{item.name}</p>
             </div>
           ))}
         </div>
