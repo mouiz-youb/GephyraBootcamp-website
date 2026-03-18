@@ -5,6 +5,21 @@
             background-clip: text;
         }
 
+.shadow-gold-glow {
+box-shadow: 0px 0px 10px 5px #ffd7006e;
+}
+.shadow-red-glow {
+box-shadow: 0px 0px 10px 5px #ff000078;
+}
+.shadow-silver-glow {
+box-shadow:  0px 0px 10px 5px #c0c0c075;
+}
+.shadow-blue-glow {
+box-shadow: 0px 0px 10px 5px #0000ff69;
+}
+.shadow-green-glow {
+box-shadow:  0px 0px 10px 5px #00800070;
+}
 
 :root {
             --gold-primary: #D4AF37;
@@ -32,6 +47,23 @@
             background: linear-gradient(var(--dark-bg), var(--dark-bg)) padding-box,
                         linear-gradient(135deg, #D4AF37, #F4E8C1, #B8941F) border-box;
         }
+        .red-border {
+            border: 2px solid transparent;
+            background: linear-gradient(var(--dark-bg), var(--dark-bg)) padding-box,
+                linear-gradient(135deg, #7f1d1d, #ef4444, #991b1b) border-box;
+        }
+        
+        .blue-border {
+            border: 2px solid transparent;
+           background: linear-gradient(var(--dark-bg), var(--dark-bg)) padding-box,
+                linear-gradient(135deg, #1e3a8a, #3b82f6, #1d4ed8) border-box;
+        }
+        .green-border {
+            border: 2px solid transparent;
+          background: linear-gradient(var(--dark-bg), var(--dark-bg)) padding-box,
+                linear-gradient(135deg, #064e3b, #10b981, #065f46) border-box;
+        }
+        
         
         .silver-border {
             border: 2px solid transparent;

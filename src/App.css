@@ -15,4 +15,10 @@
   --color-silver: var(--silver);
   --color-dark-bg: var(--dark-bg);
   --color-darker-bg: var(--darker-bg);
+  /* shadow  */
+  --shadow-gold-glow: 0px 0px 10px 5px #ffd7006e;
+  --shadow-red-glow: 0px 0px 10px 5px rgba(255, 0, 0, 0.44);
+  --shadow-silver-glow: 0px 0px 10px 5px rgba(192, 192, 192, 0.44);
+  --shadow-blue-glow: 0px 0px 10px 5px rgba(0, 0, 255, 0.44);
+  --shadow-green-glow: 0px 0px 10px 5px rgba(0, 128, 0, 0.44);
 }

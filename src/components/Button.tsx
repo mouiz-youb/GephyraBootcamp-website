@@ -4,7 +4,7 @@ interface ButtonProps {
 }
 const  Button:React.FC<ButtonProps>=({ label, className }) => {
   return (
-    <div className={`  border z-80 px-6 py-2 rounded-full capitalize  cursor-pointer  text-white ${className}`}>
+    <div className={`  border z-80 px-6 py-2 rounded-full capitalize  cursor-pointer   ${className}`}>
       {label}
     </div>
   )

@@ -1,5 +1,4 @@
 import { FaCheck } from "react-icons/fa";
-import EventLogo from "../images/EventLogo.png"
 import thron from "../images/thron.png"
 function EventSection() {
     const  listItem=[
