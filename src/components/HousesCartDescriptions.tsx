@@ -4,8 +4,7 @@ import HouseVesion from "../images/HouseVesion.png"
 import HouseArryn from "../images/HouseArryn.jpg"
 import HouseTargaryen from "../images/HouseTyrell.jpg"
 import HousesCard from "./HousesCard"
-import {motion} from "framer-motion"
-import { useState } from "react"
+import { useState , useEffect } from "react"
 import "../index.css"
 function HousesCartDescriptions() {
     const houseDetails = [
@@ -89,33 +88,80 @@ function HousesCartDescriptions() {
     });
   };
   const positions = ["left", "left1", "left2", "left3", "left4"];
-   const cardvariants = {
-    left: {
-      x: "-100%",
-      scale: 0.5,
-      zIndex: 1,
-    },
-    left1: {
-      x: "-50%",
-      scale: 0.7,
-      zIndex: 2,
-    },
-    left2: {
-      x: "0",
-      scale: 1,
-      zIndex: 5,
-    },
-    left3: {
-      x: "50%",
-      scale: 0.7,
-      zIndex: 2,
-    },
-    left4: {
-      x: "100%",
-      scale: 0.5,
-      zIndex: 1,
-    },
-  };
+  // Add a state to detect mobile
+const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+
+// Update isMobile on resize
+useEffect(() => {
+  const handleResize = () => setIsMobile(window.innerWidth < 768);
+  window.addEventListener("resize", handleResize);
+  return () => window.removeEventListener("resize", handleResize);
+}, []);
+
+const cardvariants = {
+  left: {
+    x: isMobile ? 0 : "-100%",
+    y: isMobile ? "-100%" : 0, // Stacked above
+    scale: 0.5,
+    zIndex: 1,
+   opacity: isMobile?0:1, // Hide the far ones on mobile to save space
+  },
+  left1: {
+    x: isMobile ? 0 : "-50%",
+    y: isMobile ? "-40%" : 0,
+    scale: 0.8,
+    zIndex: 2,
+   opacity: isMobile?0:1,
+  },
+  left2: { // CENTER / ACTIVE CARD
+    x: 0,
+    y: 0,
+    scale: 1,
+    zIndex: 5,
+    opacity: 1,
+  },
+  left3: {
+    x: isMobile ? 0 : "50%",
+    y: isMobile ? "40%" : 0,
+    scale: 0.8,
+    zIndex: 2,
+   opacity: isMobile?0:1,
+  },
+  left4: {
+    x: isMobile ? 0 : "100%",
+    y: isMobile ? "100%" : 0, // Stacked below
+    scale: 0.5,
+    zIndex: 1,
+    opacity: isMobile?0:1,
+  },
+};
+//    const cardvariants = {
+//     left: {
+//       x: "-100%",
+//       scale: 0.5,
+//       zIndex: 1,
+//     },
+//     left1: {
+//       x: "-50%",
+//       scale: 0.7,
+//       zIndex: 2,
+//     },
+//     left2: {
+//       x: "0",
+//       scale: 1,
+//       zIndex: 5,
+//     },
+//     left3: {
+//       x: "50%",
+//       scale: 0.7,
+//       zIndex: 2,
+//     },
+//     left4: {
+//       x: "100%",
+//       scale: 0.5,
+//       zIndex: 1,
+//     },
+//   };
   return (
     <div className="w-full flex justify-center    items-center flex-col gap-3 bg-black py-7 border-t border-gold">
         <header className="w-full flex justify-center items-center flex-col gap-3 ">
@@ -129,7 +175,7 @@ function HousesCartDescriptions() {
                 </p>
             </div>
         </header>
-        <div className="w-full relative h-screen flex px-6 mt-10 justify-center items-center flex-col gap-6 md:grid md:grid-cols-3">
+        <div className={`w-full relative h-screen flex px-6 mt-10 justify-center items-center  gap-6 md:grid md:grid-cols-3 ${isMobile ? "h-[600px]" : "h-[500px]"}`}>
             {
                 houseDetails.map((house,index)=>(
                     <HousesCard 
@@ -143,11 +189,11 @@ function HousesCartDescriptions() {
                         houseName={house.houseName}
                         houseDomain={house.houseDomain}
                         houseDesc={house.houseDesc}
-                        animate={positions[positionIndex[index]]}
-                        variants={cardvariants}
                         housList={house.housList}
                         ForHous={house.ForHous}
                         houseColor={house.houseColor}
+                        animate={positions[positionIndex[index]]}
+                        variants={cardvariants}
                     />
                 ))
             }
@@ -156,7 +202,7 @@ function HousesCartDescriptions() {
         <div className="w-full flex justify-center items-center ">
             <button 
             onClick={handeleNext}
-            className=" px-8 py-3 border-2 border-gold cursor-pointer  text-gold font-bold rounded-full hover:bg-gold hover:text-black transition-all duration-300 active:scale-95"
+            className=" z-50 px-8 py-3 border-2 border-gold cursor-pointer  text-gold font-bold rounded-full hover:bg-gold hover:text-black transition-all duration-300 active:scale-95"
         >
             REVOLVE THE HOUSES
         </button>
