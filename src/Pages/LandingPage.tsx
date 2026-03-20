@@ -1,3 +1,4 @@
+import ConcelSection from "../components/ConcelSection"
 import EventSection from "../components/EventSection"
 import HeroSection from "../components/HeroSection"
 import HousesCartDescriptions from "../components/HousesCartDescriptions"
@@ -9,6 +10,7 @@ function LandingPage() {
       <EventSection/>
       <HousesCartDescriptions/>
       <VerticalTimeline/>
+      <ConcelSection/>
     </div>
   )
 }
