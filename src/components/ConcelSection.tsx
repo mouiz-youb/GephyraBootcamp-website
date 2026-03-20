@@ -44,7 +44,7 @@ function ConcelSection() {
         },
     ]
   return (
-    <div className="w-full flex justify-center items-center flex-col gap-4 bg-black py-10 ">
+    <div className="w-full flex justify-center items-center flex-col gap-4 bg-black py-10 border-2 border-t-yellow-500 border-b-yellow-500 ">
       <header className="w-full flex justify-center items-center flex-col gap-5 ">
         <div className="w-full font-bold flex justify-center items-center flex-row gap-2 font-cinzel  ">
             <p className="gold-text text-2xl md:text-6xl">The </p>
