@@ -21,7 +21,7 @@ interface HousesCardProps {
 const HousesCard:React.FC<HousesCardProps> = ({ houseImage, houseName , houseDomain, houseDesc, housList, ForHous, houseColor ,houseNameColor ,houseDomainColor , ForHousClassName , cardGroup, borderColor , variants, animate }) => {
   return (
     <motion.div variants={variants} animate={animate}  initial="center"  transition={{ duration: 0.5 }} 
-    className={` absolute w-9/10  md:w-1/3 md:top-0 md:left-[35%] bg-black/90 flex justify-center cursor-pointer items-center flex-col gap-3 border border-gray-700 px-5 py-8 rounded-2xl  ${cardGroup} group  `}>
+    className={` absolute w-9/10  md:w-1/3 md:top-0 md:left-[35%] bg-gray-950 flex justify-center cursor-pointer items-center flex-col gap-3 border border-gray-700 px-5 py-8 rounded-2xl  ${cardGroup} group  `}>
       <div className={`flex justify-center items-center w-24 h-24 ${borderColor}   rounded-full `}>
         <img src={houseImage} alt={houseName} className="w-16 h-16 rounded-full " />
       </div>

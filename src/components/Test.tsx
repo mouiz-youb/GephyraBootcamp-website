@@ -1,106 +1,49 @@
-// import  { useState } from "react";
-// import { motion } from "framer-motion";
-// import "../App.css";
-// import dark4 from "../assets/dark4.jpg";
-// import dark2 from "../assets/dark2.jpg";
-// import dark3 from "../assets/dark3.jpg";
-// function Caroucel() {
-//   // 1. Create a new state variable called `positionIndex` and set it to the initial value of `[0, 1, 2, 3, 4]`
-//   const [positionIndex, setPositionIndex] = useState([0, 1, 2, 3, 4]);
-//   // 2. Create a new function called `handeleNext` that updates the state variable `positionIndex` by incrementing each value by 1
-//   const handeleNext = () => {
-//     setPositionIndex((prevIndex) => {
-//       const newPosition = prevIndex.map((prevIndex) => (prevIndex + 1) % 5);
-//       return newPosition;
-//     });
-//   };
-//   // 3. Create an array called `images` that contains the image paths for the carousel
-//   const images = [dark2, dark3, dark4, dark3, dark4];
-//   // 4. Create an array called `positions` that contains the position values for the carousel
-//   const positions = ["left", "left1", "left2", "left3", "left4"];
-//   // 5. Create an object called `imagevariants` that contains the variants for the carousel images
-//   const imagevariants = {
-//     left: {
-//       x: "-100%",
-//       scale: 0.5,
-//       zIndex: 1,
-//     },
-//     left1: {
-//       x: "-50%",
-//       scale: 0.7,
-//       zIndex: 2,
-//     },
-//     left2: {
-//       x: "0",
-//       scale: 1,
-//       zIndex: 5,
-//     },
-//     left3: {
-//       x: "50%",
-//       scale: 0.7,
-//       zIndex: 2,
-//     },
-//     left4: {
-//       x: "100%",
-//       scale: 0.5,
-//       zIndex: 1,
-//     },
-//   };
-//   const positions1 = ["one", "two", "three", "four", "five"];
-//   const imagevariants1 = {
-//     one: {
-//       //   x: "-100%",
-//       left: "0",
-//       scale: 0.5,
-//       zIndex: 1,
-//     },
-//     two: {
-//       //   x: "-50%",
-//       left: "20%",
-//       scale: 0.7,
-//       zIndex: 2,
-//     },
-//     three: {
-//       //   x: "0",
-//       left: "40%",
-//       scale: 1,
-//       zIndex: 5,
-//     },
-//     four: {
-//       //   x: "50%",
-//       left: "60%",
-//       scale: 0.7,
-//       zIndex: 2,
-//     },
-//     five: {
-//       //   x: "100%",
-//       left: "80%",
-//       scale: 0.5,
-//       zIndex: 1,
-//     },
-//   };
-//   return (
-//     <div className="flex justify-center items-center h-screen flex-col bg-black ">
-//       {images.map((image, index) => (
-//         <motion.img
-//           key={index}
-//           src={image}
-//           className={`rounded-[12px]`}
-//           initial="center"
-//           animate={positions[positionIndex[index]]}
-//           variants={imagevariants}
-//           transition={{ duration: 0.5 }}
-//           style={{ position: "absolute", width: "40%" }}
-//         />
-//       ))}
-//       <button
-//         className="text-white mt-[400px] bg-indigo-400 rounded-md py-2 px-4 z-50 absolute top-[400px]"
-//         onClick={handeleNext}
-//       >
-//         Next
-//       </button>
-//     </div>
-//   );
-// }
+import { motion } from "framer-motion";
 
-// export default Caroucel;
+const timelineData = [
+  { id: "01", title: "Day 1: The Gathering", desc: "Opening ceremony, house selection, and environment setup." },
+  { id: "02-03", title: "Days 2-3: Training Grounds", desc: "Intensive workshops and hands-on sessions." },
+  { id: "02-03", title: "Days 2-3: Training Grounds", desc: "Intensive workshops and hands-on sessions." },
+  { id: "02-03", title: "Days 2-3: Training Grounds", desc: "Intensive workshops and hands-on sessions." },
+  { id: "02-03", title: "Days 2-3: Training Grounds", desc: "Intensive workshops and hands-on sessions." },
+];
+
+export const Timeline = () => {
+  return (
+    <div className="bg-black w-full  text-white py-20 min-h-screen">
+      <div className="relative max-w-5xl mx-auto px-4">
+        
+        {/* The Central Vertical Line */}
+        <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-transparent via-gold to-transparent" />
+
+        <div className="space-y-24">
+          {timelineData.map((item, index) => (
+            <div key={index} className={`flex items-center justify-between w-full ${index % 2 === 0 ? "flex-row-reverse" : ""}`}>
+              
+              {/* Card Section */}
+              <motion.div 
+                initial={{ opacity: 0, x: index % 2 === 0 ? 50 : -50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                className="w-[45%] p-6 border border-gold rounded-xl bg-gray-900/50 backdrop-blur-sm"
+              >
+                <h3 className="text-xl font-bold text-gold font-cinzel">{item.title}</h3>
+                <p className="text-gray-400 mt-2">{item.desc}</p>
+              </motion.div>
+
+              {/* Central Node (The Circle) */}
+              <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-black border-2 border-gold z-10">
+                <div className="w-2 h-2 bg-gold rounded-full m-auto mt-[2px]" />
+              </div>
+
+              {/* Number Section */}
+              <div className="w-[45%] px-6">
+                <span className="text-4xl font-bold text-gold opacity-80">{item.id}</span>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};

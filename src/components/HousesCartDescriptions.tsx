@@ -135,33 +135,6 @@ const cardvariants = {
     opacity: isMobile?0:1,
   },
 };
-//    const cardvariants = {
-//     left: {
-//       x: "-100%",
-//       scale: 0.5,
-//       zIndex: 1,
-//     },
-//     left1: {
-//       x: "-50%",
-//       scale: 0.7,
-//       zIndex: 2,
-//     },
-//     left2: {
-//       x: "0",
-//       scale: 1,
-//       zIndex: 5,
-//     },
-//     left3: {
-//       x: "50%",
-//       scale: 0.7,
-//       zIndex: 2,
-//     },
-//     left4: {
-//       x: "100%",
-//       scale: 0.5,
-//       zIndex: 1,
-//     },
-//   };
   return (
     <div className="w-full flex justify-center    items-center flex-col gap-3 bg-black py-7 border-t border-gold">
         <header className="w-full flex justify-center items-center flex-col gap-3 ">
