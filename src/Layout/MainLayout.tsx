@@ -4,7 +4,7 @@ function MainLayout() {
   return (
     <div className="w-full h-full flex justify-center items-center flex-col">
       <Navbar />
-      <main className="flex justify-center items-center flex-col border w-full ">
+      <main className="flex justify-center items-center flex-col border w-full mt-20 ">
         <Outlet />
       </main>
     </div>
