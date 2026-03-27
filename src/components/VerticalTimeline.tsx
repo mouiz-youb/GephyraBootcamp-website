@@ -2,14 +2,15 @@ import VerticalTimelineCard from "./VerticalTimelineCard";
 
 function VerticalTimeline() {
     const timelineData = [
-  { id: "01", title: "Day 1: The Gathering", bg:"bg-gold",border:"border-gold", textColor :"gold-text" , className :" border-r-4 border-yellow-500" ,  desc: "Opening ceremony, house selection, and environment setup." },
-  { id: "02-03", title: "Days 2-3: Training Grounds", bg:"bg-red-500",border:"border-red-500", textColor :"text-red-500" , className :" border-r-4 border-red-500" ,  desc: "Intensive workshops and hands-on sessions." },
-  { id: "02-03", title: "Days 2-3: Training Grounds", bg:"bg-silver ",border:"border-silver", textColor :"text-silver" , className :" border-r-4 border-silver" ,  desc: "Intensive workshops and hands-on sessions." },
-  { id: "02-03", title: "Days 2-3: Training Grounds", bg:"bg-gold",border:"border-gold", textColor :"gold-text" , className :" border-r-4 border-yellow-500" ,  desc: "Intensive workshops and hands-on sessions." },
-  { id: "02-03", title: "Days 2-3: Training Grounds", bg:"bg-red-500",border:"border-red-500", textColor :"text-red-500" , className :" border-r-4 border-red-500" ,  desc: "Intensive workshops and hands-on sessions." },
+  { id: "9:30h", title: "Day 1: The check-In ", bg:"bg-gold",border:"border-gold", textColor :"gold-text" , className :" border-r-4 border-yellow-500" ,  desc: "Professional & Welcoming:Your journey begins with the official check-in" },
+  { id: "10h", title: "Days 1: WorkShop Begin", bg:"bg-red-500",border:"border-red-500", textColor :"text-red-500" , className :" border-r-4 border-red-500" ,  desc: "Intensive workshops and hands-on sessions with First project" },
+  { id: "12h", title: "Days 1:First Break", bg:"bg-silver ",border:"border-silver", textColor :"text-silver" , className :" border-r-4 border-silver" ,  desc: "A moment to breathe and connect. Recharge with fellow house members and prepare for the next round of technical challenges." },
+  { id: "13:30h", title: "Days 1: Back to Session", bg:"bg-gold",border:"border-gold", textColor :"gold-text" , className :" border-r-4 border-yellow-500" ,  desc: "Session resumes. Pick up exactly where you left off as we push toward the final milestones of Day 1" },
+  { id: "15:30h", title: "Days 1: Second Break", bg:"bg-red-500",border:"border-red-500", textColor :"text-red-500" , className :" border-r-4 border-red-500" ,  desc: "Final afternoon break. Step away, refuel, and prepare for the concluding session of Day 1." },
+  { id: "16h", title: "Days 1:final sprint", bg:"bg-silver ",border:"border-silver", textColor :"text-silver" , className :" border-r-4 border-silver" ,  desc: "Resuming for the final hour. We close out Day 1 with hands-on technical refinements and a summary of our progress." },
 ];
   return (
-    <div className="w-full flex justify-center items-center flex-col z-20  text-white pt-10 bg-[#0A0A0A]">
+    <div id="agenda" className="w-full flex justify-center items-center flex-col z-20  text-white pt-10 bg-[#0A0A0A]">
       <header className="w-full flex justify-center items-center flex-col gap-5 ">
         <div className="w-full font-bold flex justify-center items-center flex-row gap-2 font-cinzel  ">
             <p className="gold-text text-2xl md:text-6xl">Battle </p>

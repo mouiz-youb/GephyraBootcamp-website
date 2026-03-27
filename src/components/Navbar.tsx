@@ -5,12 +5,12 @@ import { CiMenuFries } from "react-icons/ci";
 import Button from "./Button"
 function Navbar() {
   const links = [
-    { name: "Home", path: "/" },
-    { name: "About", path: "/about" },
-    { name: "Houses", path: "/houses" },
-    { name: "Agenda", path: "/agenda" },
-    { name: "Mentors", path: "/mentors" },
-    { name: "FAQ", path: "/faq" },
+    { name: "Hero", path: "#hero" },
+    { name: "About", path: "#about" },
+    { name: "Houses", path: "#houses" },
+    { name: "Agenda", path: "#agenda" },
+    { name: "Mentors", path: "#mentors" },
+    { name: "Contact", path: "#contact" },
   ]
   // gold-border 
   // gold-text
@@ -30,12 +30,12 @@ function Navbar() {
       <ul className="md:flex justify-evenly items-center hidden   md:h-full gap-8 md:w-2/3">
         {links.map((link) => (
           <li key={link.path}>
-            <Link to={link.path} className="text-white hover:text-yellow-500 transition-colors px-3 py-2 rounded-md text-sm font-medium">
+            <a href={link.path} className="text-white hover:text-yellow-500 transition-colors px-3 py-2 rounded-md text-sm font-medium">
               {link.name}
-            </Link>
+            </a>
           </li>
         ))}
-          <Button label="apply now " className="" />
+          <Button label="apply now " className="btn-gold " />
       </ul>
     </div>
   )

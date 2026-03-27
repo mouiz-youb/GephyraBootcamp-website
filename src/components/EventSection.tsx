@@ -30,7 +30,7 @@ function EventSection() {
         },
     ]
   return (
-    <div className='flex w-full justify-center items-center flex-col md:flex-row  gap-3  bg-black md:px-5 '>
+    <div id="about" className='flex w-full justify-center items-center flex-col md:flex-row  gap-3  bg-black md:px-5 '>
      <div className="w-full md:w-1/2 flex justify-center items-center flex-col gap-3 px-3 ">
          <header className="w-full flex justify-center items-start  font-cinzel flex-col gap-3  font-bold  text-4xl md:text-5xl  mb-6">
             <p className="gold-text"> The Battle for</p>

@@ -10,7 +10,7 @@ interface ConcelSectionCardProps {
 
 const  ConcelSectionCard:React.FC<ConcelSectionCardProps>=({mentorName , post  , image , bg , textColor  , borderColor ,hoverCart})=> {
   return (
-    <div className={` w-full bg-gray-950 md:w-1/3 flex justify-center border items-center flex-row  gap-6 py-8 rounded-2xl px-3 cursor-pointer  ${hoverCart}  ${borderColor}`}>
+    <div className={` w-full bg-gray-950 md:w-1/3 flex justify-center border items-center flex-row  gap-6 py-8 rounded-2xl px-3 cursor-pointer transition-all duration-300  ${hoverCart}  ${borderColor}`}>
       <div className={`w-16 h-16 rounded-full  flex justify-center items-center  ${bg}`}>
         <p className=" text-black font-bold text-2xl "> {image} </p>
       </div>

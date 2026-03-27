@@ -19,11 +19,11 @@ function ConcelSection() {
             ]
         },
         {
-            houseName: "House Vision Masters",
+            houseName: "House of Interface Masters",
             houseColorClass: "text-gray-600",
             mentors: [
-                { id: 5, mentorName: "Alex Storm", post: "Senior UX Designer @ TechCorp", image: "AS", borderColor: "border-gray-600", bg: "bg-gradient-to-br from-gray-400 to-gray-600", hoverCart:"hover:shadow-silver-glow border hover:border-gray-500" , textColor: "text-gray-600" },
-                { id: 6, mentorName: "Maria Lannister", post: "Product Designer @ StartupX", image: "ML", borderColor: "border-gray-600", bg: "bg-gradient-to-br from-gray-400 to-gray-600", hoverCart:"hover:shadow-silver-glow border hover:border-gray-500" , textColor: "text-gray-600" },
+                { id: 5, mentorName: "Abdelmouiz Mustapha", post: "Full Stack web developer", image: "AM", borderColor: "border-gray-600", bg: "bg-gradient-to-br from-gray-400 to-gray-600", hoverCart:"hover:shadow-silver-glow border hover:border-gray-500" , textColor: "text-gray-600" },
+                { id: 6, mentorName: "Monsif Monsif", post: "Full Stack web developer", image: "ML", borderColor: "border-gray-600", bg: "bg-gradient-to-br from-gray-400 to-gray-600", hoverCart:"hover:shadow-silver-glow border hover:border-gray-500" , textColor: "text-gray-600" },
             ]
         },
         {
@@ -44,7 +44,7 @@ function ConcelSection() {
         },
     ]
   return (
-    <div className="w-full flex justify-center items-center flex-col gap-4 bg-black py-10 border-2 border-t-yellow-500 border-b-yellow-500 ">
+    <div id="mentors" className="w-full flex justify-center items-center flex-col gap-4 bg-black py-10 border-2 border-t-yellow-500 border-b-yellow-500 ">
       <header className="w-full flex justify-center items-center flex-col gap-5 ">
         <div className="w-full font-bold flex justify-center items-center flex-row gap-2 font-cinzel  ">
             <p className="gold-text text-2xl md:text-6xl">The </p>

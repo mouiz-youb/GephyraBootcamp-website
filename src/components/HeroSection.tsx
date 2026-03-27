@@ -17,7 +17,7 @@ function HeroSection() {
     },
   ]
   return (
-    <div className="w-full flex justify-center items-center flex-col gap-3 relative pt-5 bg-black ">
+    <div id="hero" className="w-full flex justify-center items-center flex-col gap-3 relative pt-5 bg-black ">
       <div className="absolute inset-0 hero-gradient parallax-bg" data-speed="0.5"></div>
         
         {/*  Animated Background Elements  */}
