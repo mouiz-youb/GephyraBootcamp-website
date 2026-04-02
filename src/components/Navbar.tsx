@@ -39,7 +39,7 @@ function Navbar() {
             </a>
           </li>
         ))}
-          <Button label="apply now " className="btn-gold " />
+          <Button label="apply now " to="https://docs.google.com/forms/d/e/1FAIpQLSeCfHVGCBSZrIkhvpol40e5s5znOLE2F6WkbctVY95Kp7DEhQ/viewform" className="btn-gold " />
       </ul>
     </div>
   )

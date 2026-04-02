@@ -6,16 +6,16 @@ function ConcelSection() {
             houseName: "House Vision Masters",
             houseColorClass: "gold-text",
             mentors: [
-                { id: 1, mentorName: "Alex Storm", post: "Senior UX Designer @ TechCorp", image: "AS", borderColor: "border-yellow-600", bg: "bg-gradient-to-br from-yellow-400 to-yellow-600", hoverCart:"hover:shadow-gold-glow border hover:border-yellow-500" , textColor: "gold-text" },
-                { id: 2, mentorName: "Maria Lannister", post: "Product Designer @ StartupX", image: "ML", borderColor: "border-yellow-600", bg: "bg-gradient-to-br from-yellow-400 to-yellow-600", hoverCart:"hover:shadow-gold-glow border hover:border-yellow-500" , textColor: "gold-text" },
+                { id: 1, mentorName: "Rayane Makhouf", post: "Senior UX Designer @ TechCorp", image: "RM", borderColor: "border-yellow-600", bg: "bg-gradient-to-br from-yellow-400 to-yellow-600", hoverCart:"hover:shadow-gold-glow border hover:border-yellow-500" , textColor: "gold-text" },
+                { id: 2, mentorName: "Abbass Bilal", post: "Product Designer @ StartupX", image: "AB", borderColor: "border-yellow-600", bg: "bg-gradient-to-br from-yellow-400 to-yellow-600", hoverCart:"hover:shadow-gold-glow border hover:border-yellow-500" , textColor: "gold-text" },
             ]
         },
         {
             houseName: "House Vision Masters",
             houseColorClass: "text-red-600",
             mentors: [
-                { id: 3, mentorName: "Alex Storm", post: "Senior UX Designer @ TechCorp", image: "AS", borderColor: "border-red-600", bg: "bg-gradient-to-br from-red-400 to-red-600", hoverCart:"hover:shadow-red-glow border hover:border-red-500" , textColor: "text-red-600" },
-                { id: 4, mentorName: "Maria Lannister", post: "Product Designer @ StartupX", image: "ML", borderColor: "border-red-600", bg: "bg-gradient-to-br from-red-400 to-red-600", hoverCart:"hover:shadow-red-glow border hover:border-red-500" , textColor: "text-red-600" },
+                { id: 3, mentorName: "Amdjed Hallaci", post: "Senior UX Designer @ TechCorp", image: "AH", borderColor: "border-red-600", bg: "bg-gradient-to-br from-red-400 to-red-600", hoverCart:"hover:shadow-red-glow border hover:border-red-500" , textColor: "text-red-600" },
+                { id: 4, mentorName: "Iles Aissou", post: "Product Designer @ StartupX", image: "IA", borderColor: "border-red-600", bg: "bg-gradient-to-br from-red-400 to-red-600", hoverCart:"hover:shadow-red-glow border hover:border-red-500" , textColor: "text-red-600" },
             ]
         },
         {
@@ -27,19 +27,19 @@ function ConcelSection() {
             ]
         },
         {
-            houseName: "House Vision Masters",
+            houseName: "House of Arryn Masters",
             houseColorClass: "text-blue-600",
             mentors: [
-                { id: 1, mentorName: "Alex Storm", post: "Senior UX Designer @ TechCorp", image: "AS", borderColor: "border-blue-600", bg: "bg-gradient-to-br from-blue-400 to-blue-600", hoverCart:"hover:shadow-blue-glow border hover:border-blue-500" , textColor: "text-blue-600" },
-                { id: 2, mentorName: "Maria Lannister", post: "Product Designer @ StartupX", image: "ML", borderColor: "border-blue-600", bg: "bg-gradient-to-br from-blue-400 to-blue-600", hoverCart:"hover:shadow-blue-glow border hover:border-blue-500" , textColor: "text-blue-600" },
+                { id: 1, mentorName: "Hamzaoui Louai", post: "Senior UX Designer @ TechCorp", image: "HL", borderColor: "border-blue-600", bg: "bg-gradient-to-br from-blue-400 to-blue-600", hoverCart:"hover:shadow-blue-glow border hover:border-blue-500" , textColor: "text-blue-600" },
+                // { id: 2, mentorName: "Maria Lannister", post: "Product Designer @ StartupX", image: "ML", borderColor: "border-blue-600", bg: "bg-gradient-to-br from-blue-400 to-blue-600", hoverCart:"hover:shadow-blue-glow border hover:border-blue-500" , textColor: "text-blue-600" },
             ]
         },
         {
-            houseName: "House Vision Masters",
+            houseName: "House of Targaryen Masters",
             houseColorClass: "text-green-600",
             mentors: [
-                { id: 1, mentorName: "Alex Storm", post: "Senior UX Designer @ TechCorp", image: "AS", borderColor: "border-green-600", bg: "bg-gradient-to-br from-green-400 to-green-600", hoverCart:"hover:shadow-green-glow border hover:border-green-500" , textColor: "text-green-600" },
-                { id: 2, mentorName: "Maria Lannister", post: "Product Designer @ StartupX", image: "ML", borderColor: "border-green-600", bg: "bg-gradient-to-br from-green-400 to-green-600", hoverCart:"hover:shadow-green-glow border hover:border-green-500" , textColor: "text-green-600" },
+                { id: 1, mentorName: "Ech Team", post: "Senior UX Designer @ TechCorp", image: "ET", borderColor: "border-green-600", bg: "bg-gradient-to-br from-green-400 to-green-600", hoverCart:"hover:shadow-green-glow border hover:border-green-500" , textColor: "text-green-600" },
+                // { id: 2, mentorName: "Maria Lannister", post: "Product Designer @ StartupX", image: "ML", borderColor: "border-green-600", bg: "bg-gradient-to-br from-green-400 to-green-600", hoverCart:"hover:shadow-green-glow border hover:border-green-500" , textColor: "text-green-600" },
             ]
         },
     ]

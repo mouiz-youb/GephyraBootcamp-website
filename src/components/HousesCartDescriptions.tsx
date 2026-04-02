@@ -12,7 +12,7 @@ function HousesCartDescriptions() {
             houseImage : HouseVesion,
             borderColor : "gold-border",
             cardGroup:"hover:shadow-gold-glow border hover:border-yellow-500 ",
-            houseName : "House of Logic",
+            houseName : "House of Vesion",
             houseDomain : "UI&UX Advanced course",
             houseDesc : "Master the intersection of visual art and psychological intent. Our House Vision course empowers designers to craft world-class digital experiences.",
             housList : ["UX Strategy & Cognitive Psychology","High-Fidelity Prototyping","Scalable Design Systems" , "Advanced Tool Mastery"],

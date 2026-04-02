@@ -41,7 +41,7 @@ function HeroSection() {
           </div>
         </div>
         <div className="w-full flex justify-center items-center flex-row gap-5 md:flex-row ">
-          <Button label="applly now " className="btn-gold  pulse-gold md:px-8 md:py-4 "/>
+          <Button label="applly now " to="https://docs.google.com/forms/d/e/1FAIpQLSeCfHVGCBSZrIkhvpol40e5s5znOLE2F6WkbctVY95Kp7DEhQ/viewform" className="btn-gold  pulse-gold md:px-8 md:py-4 "/>
           <Button label="learn more  " className=" border-yellow-500/50 md:px-8 md:py-4 text-yellow-500 hover:bg-yellow-500/10 transition-all"/>
         </div>
         <div className=" w-full md:w-1/2  px-3 md:px-0 grid grid-cols-3  gap-10 my-8  relative">
