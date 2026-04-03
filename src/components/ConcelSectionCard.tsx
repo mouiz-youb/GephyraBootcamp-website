@@ -16,7 +16,7 @@ const  ConcelSectionCard:React.FC<ConcelSectionCardProps>=({mentorName , post  ,
       </div>
       <div className="flex justify-center items-start flex-col gap-3 ">
         <p className="text-white font-cinzel font-bold text-2xl "> {mentorName} </p>
-        <p className={textColor}> {post} </p>
+        <p className={`${textColor}`}> {post} </p>
       </div>
     </div>
   )

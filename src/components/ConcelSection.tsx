@@ -30,7 +30,7 @@ function ConcelSection() {
             houseName: "House of Arryn Masters",
             houseColorClass: "text-blue-600",
             mentors: [
-                { id: 1, mentorName: "Hamzaoui Louai", post: "Senior UX Designer @ TechCorp", image: "HL", borderColor: "border-blue-600", bg: "bg-gradient-to-br from-blue-400 to-blue-600", hoverCart:"hover:shadow-blue-glow border hover:border-blue-500" , textColor: "text-blue-600" },
+                { id: 1, mentorName: "Hamzaoui Louai", post: "Full Stack web developer & Game Developer", image: "HL", borderColor: "border-blue-600", bg: "bg-gradient-to-br from-blue-400 to-blue-600", hoverCart:"hover:shadow-blue-glow border hover:border-blue-500" , textColor: "text-blue-600" },
                 // { id: 2, mentorName: "Maria Lannister", post: "Product Designer @ StartupX", image: "ML", borderColor: "border-blue-600", bg: "bg-gradient-to-br from-blue-400 to-blue-600", hoverCart:"hover:shadow-blue-glow border hover:border-blue-500" , textColor: "text-blue-600" },
             ]
         },
@@ -38,7 +38,7 @@ function ConcelSection() {
             houseName: "House of Targaryen Masters",
             houseColorClass: "text-green-600",
             mentors: [
-                { id: 1, mentorName: "Ech Team", post: "Senior UX Designer @ TechCorp", image: "ET", borderColor: "border-green-600", bg: "bg-gradient-to-br from-green-400 to-green-600", hoverCart:"hover:shadow-green-glow border hover:border-green-500" , textColor: "text-green-600" },
+                { id: 1, mentorName: "Ech Team", post: "Senior DevOps Engineer", image: "ET", borderColor: "border-green-600", bg: "bg-gradient-to-br from-green-400 to-green-600", hoverCart:"hover:shadow-green-glow border hover:border-green-500" , textColor: "text-green-600" },
                 // { id: 2, mentorName: "Maria Lannister", post: "Product Designer @ StartupX", image: "ML", borderColor: "border-green-600", bg: "bg-gradient-to-br from-green-400 to-green-600", hoverCart:"hover:shadow-green-glow border hover:border-green-500" , textColor: "text-green-600" },
             ]
         },
